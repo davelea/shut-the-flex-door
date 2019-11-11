@@ -1,0 +1,38 @@
+:root {
+  --brand-background: #1e2749;
+  --brand-background-light: #e4d9ff;
+  --brand-text: #30343f;
+  --brand-text-light: #fafaff;
+  --brand-shade: #273469;
+}
+
+body {
+  margin: 0;
+}
+
+.stfu__header {
+  background-color: var(--brand-background);
+  color: var(--brand-text-light);
+  width: 100%;
+}
+
+.stfu__header-logo {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.stfu__footer {
+  background-color: var(--brand-background-light);
+  color: var(--brand-text);
+  min-height: 10vh;
+}
+
+.stfu__footer-content {
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* Utilities */
+.stfu_flex {
+  display: flex;
+}
