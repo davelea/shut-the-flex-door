@@ -32,7 +32,45 @@ body {
   padding: 2rem;
 }
 
+.stfu__example {
+  padding: 2rem;
+}
+
+.stfu__example-toggle {
+  padding-bottom: 1rem;
+}
+
+.stfu__example-container {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+}
+
+.stfu__example-div {
+  border: 1px solid var(--brand-text);
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Utilities */
 .stfu_flex {
   display: flex;
+}
+
+.stfu_background-one {
+  background-color: #380e7f;
+}
+
+.stfu_background-two {
+  background-color: #d62196;
+}
+
+.stfu_background-three {
+  background-color: #6915cf;
+}
+
+.stfu_background-four {
+  background-color: #e497cd;
 }

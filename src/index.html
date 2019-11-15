@@ -8,6 +8,7 @@
   <meta name="description" content="A hands-on tutorial for using flex.">
   <link rel="shortcut icon" href="favicon.ico" type="">
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,37 @@
   </div>
 
   <div class="stfu__content">
+    <div class="stfu__example">
+      <h2>Flex Direction</h2>
+      <p>Controls the main axis direction of a flex container.</p>
+      <ul>
+        <li>row: left to right (default)</li>
+        <li>row-reverse: right to left</li>
+        <li>column: top to bottom</li>
+        <li>column-reverse: bottom to top</li>
+      </ul>
+      <div class="stfu__example-toggle">
+        <input type="radio" id="row" name="flex-direction" value="row" onchange="handleChangeFlexDirection(event)">
+        <label for="row">row</label>
 
+        <input type="radio" id="row-reverse" name="flex-direction" value="row-reverse"
+          onchange="handleChangeFlexDirection(event)">
+        <label for="row-reverse">row-reverse</label>
+
+        <input type="radio" id="column" name="flex-direction" value="column"
+          onchange="handleChangeFlexDirection(event)">
+        <label for="column">column</label>
+
+        <input type="radio" id="column-reverse" name="flex-direction" value="column-reverse"
+          onchange="handleChangeFlexDirection(event)">
+        <label for="column-reverse">column-reverse</label>
+      </div>
+      <div id="flex-direction-container" class="stfu__example-container">
+        <div class="stfu__example-div stfu_background-one">One</div>
+        <div class="stfu__example-div stfu_background-two">Two</div>
+        <div class="stfu__example-div stfu_background-three">Three</div>
+      </div>
+    </div>
   </div>
 
   <div class="stfu__footer">
