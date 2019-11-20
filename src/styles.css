@@ -59,6 +59,23 @@ body {
   display: flex;
 }
 
+.stfu_flex-column {
+  flex-direction: column;
+}
+
+.stfu_flex-wrap {
+  flex-wrap: wrap;
+}
+
+.stfu_p-vertical_m {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.stfu_p-bottom_m {
+  padding-bottom: .5rem;
+}
+
 .stfu_background-one {
   background-color: #380e7f;
 }

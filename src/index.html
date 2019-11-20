@@ -17,15 +17,18 @@
   </div>
 
   <div class="stfu__content">
-    <div class="stfu__example">
+    <section class="stfu__example">
       <h2>Flex Direction</h2>
+
       <p>Controls the main axis direction of a flex container.</p>
+
       <ul>
         <li>row: left to right (default)</li>
         <li>row-reverse: right to left</li>
         <li>column: top to bottom</li>
         <li>column-reverse: bottom to top</li>
       </ul>
+
       <div class="stfu__example-toggle">
         <input type="radio" id="row" name="flex-direction" value="row" onchange="handleChangeFlexDirection(event)">
         <label for="row">row</label>
@@ -47,7 +50,40 @@
         <div class="stfu__example-div stfu_background-two">Two</div>
         <div class="stfu__example-div stfu_background-three">Three</div>
       </div>
-    </div>
+    </section>
+
+    <section class="stfu__example">
+      <h2>Order</h2>
+
+      <p>Determines the order that elements will appear in a flex container. Default order is 0.</p>
+
+      <div id="flex-order-container" class="stfu__example-container stfu_flex-wrap">
+        <div class="stfu__example-div stfu_background-one stfu_flex stfu_flex-column">
+          <div class="stfu_p-vertical_m">
+            <label for="order_one">One</label>
+          </div>
+          <input id="order_one" type="number" value="0" oninput="handleChangeOrder(event)">
+        </div>
+        <div class="stfu__example-div stfu_background-two stfu_flex stfu_flex-column">
+          <div class="stfu_p-vertical_m">
+            <label for="order_two">Two</label>
+          </div>
+          <input id="order_two" type="number" value="0" oninput="handleChangeOrder(event)">
+        </div>
+        <div class="stfu__example-div stfu_background-three stfu_flex stfu_flex-column">
+          <div class="stfu_p-vertical_m">
+            <label for="order_three">Three</label>
+          </div>
+          <input id="order_three" type="number" value="0" oninput="handleChangeOrder(event)">
+        </div>
+        <div class="stfu__example-div stfu_background-four stfu_flex stfu_flex-column">
+          <div class="stfu_p-vertical_m">
+            <label for="order_four">Four</label>
+          </div>
+          <input id="order_four" type="number" value="0" oninput="handleChangeOrder(event)">
+        </div>
+      </div>
+    </section>
   </div>
 
   <div class="stfu__footer">
