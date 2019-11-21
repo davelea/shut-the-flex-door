@@ -13,3 +13,13 @@ function handleChangeOrder(event) {
     container.setAttribute('style', `order: ${event.srcElement.value}`);
   }
 }
+
+function handleChangeGrow(event) {
+  let element = event.srcElement;
+
+  if (element.checkValidity()) {
+    let container = event.srcElement.closest('.stfu__example-div');
+
+    container.setAttribute('style', `flex-grow: ${event.srcElement.value}`);
+  }
+}

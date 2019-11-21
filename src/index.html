@@ -76,11 +76,40 @@
           </div>
           <input id="order_three" type="number" value="0" oninput="handleChangeOrder(event)">
         </div>
-        <div class="stfu__example-div stfu_background-four stfu_flex stfu_flex-column">
+      </div>
+    </section>
+
+    <section class="stfu__example">
+      <h2>flex-grow</h2>
+
+      <p>Defines the ratio of space an item will take up within a flex container in relation to its siblings. For
+        example, a flex container with three children divs with flex-grow of 1 will take up the same amount of space.
+        Whereas, if one of those children had a flex-grow of 2, it would take up twice as much space as it's siblings.
+      </p>
+
+      <ul>
+        <li>flex-grow default is 0</li>
+        <li>can't be a negative value</li>
+      </ul>
+
+      <div id="flex-order-container" class="stfu__example-container stfu_flex-wrap">
+        <div class="stfu__example-div stfu_background-one stfu_flex stfu_flex-column">
           <div class="stfu_p-vertical_m">
-            <label for="order_four">Four</label>
+            <label for="order_one">One</label>
           </div>
-          <input id="order_four" type="number" value="0" oninput="handleChangeOrder(event)">
+          <input id="order_one" type="number" min=0 value="1" oninput="handleChangeGrow(event)">
+        </div>
+        <div class="stfu__example-div stfu_background-two stfu_flex stfu_flex-column">
+          <div class="stfu_p-vertical_m">
+            <label for="order_two">Two</label>
+          </div>
+          <input id="order_two" type="number" min=0 value="2" oninput="handleChangeGrow(event)">
+        </div>
+        <div class="stfu__example-div stfu_background-three stfu_flex stfu_flex-column">
+          <div class="stfu_p-vertical_m">
+            <label for="order_three">Three</label>
+          </div>
+          <input id="order_three" type="number" min=0 value="3" oninput="handleChangeGrow(event)">
         </div>
       </div>
     </section>
